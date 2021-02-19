@@ -1,0 +1,20 @@
+// Header styles
+.header {
+    padding-top: 18px;
+    padding-bottom: 15px;
+
+    @include responsive(desktop) {
+        padding-top: 53px;
+        padding-bottom: 40px;
+    }
+
+    &__logo {
+        display: inline-block;
+        @include coverImage(131px, auto);
+
+        @include responsive(desktop) {
+            @include coverImage(238px, auto);
+        }
+
+    }
+}

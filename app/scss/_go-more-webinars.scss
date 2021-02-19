@@ -1,0 +1,46 @@
+// Go more webinars
+.go-more-webinars {
+    width: 300px;
+    height: auto;
+    margin-top: 40px;
+
+    @include responsive(desktop) {
+        width: 360px;
+        margin-top: 64px;
+    }
+
+    a {
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $base-text;
+        
+        span {
+            border-bottom: 2px solid $base-text;
+
+            @include responsive(desktop) {
+                border-bottom: 4px solid $base-text;
+            }
+        }
+
+        @include responsive(desktop) {
+            font-size: 56px;
+        }
+    }
+}
+
+.go-more-webinars:hover {
+    a {
+        color: $blue;
+
+        span {
+            border-bottom: 2px solid $blue;
+
+            @include responsive(desktop) {
+                border-bottom: 4px solid $blue;
+            }
+        }
+    }
+}

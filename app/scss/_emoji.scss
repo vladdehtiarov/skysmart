@@ -1,0 +1,35 @@
+.emoji {
+    display: inline-block;
+
+    //teacher-man
+    &.emoji-teacher-man {
+        @include uploadRespEmoji(teacher-man);
+    }
+
+    //video
+    &.emoji-video {
+        @include uploadRespEmoji(video);
+    }
+
+    //teen-girl
+    &.emoji-teen-girl {
+        @include uploadRespEmoji(teen-girl);
+    }
+    
+}
+
+.emoji--only-desktop {
+    display: none;
+
+    @include responsive(desktop) {
+        display: inline-block;
+    }
+}
+
+.emoji--only-mobile {
+    display: none;
+
+    @include responsive(mobile) {
+        display: inline-block;
+    }
+}

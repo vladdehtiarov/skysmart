@@ -1,0 +1,61 @@
+// Page title styles
+.page-title {
+    .container {
+        position: relative;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 40px;
+        font-weight: normal;
+        line-height: 100%;
+        letter-spacing: -0.1px;
+
+        @include responsive(desktop) {
+            max-width: 888px;
+            font-size: 72px;
+        }
+    }
+
+    .emoji {
+        margin: -11px;
+        position: absolute;
+
+        
+        @include responsive(desktop) {
+            margin: -18px;
+        }
+
+        &-teacher-man {
+            bottom: -98px;
+            left: 10px;
+            transform: rotate(-10.26deg);
+            
+            @include responsive(desktop) {
+                top: 122px;
+                left: 434px;
+            }
+        }
+
+        &-video {
+            left: 122px;
+            bottom: -75px;
+            
+            @include responsive(desktop) {
+                top: 40px;
+                left: 594px;
+            }
+        }
+
+        &-teen-girl {
+            left: 196px;
+            bottom: -102px;
+            transform: rotate(16.19deg);
+
+            @include responsive(desktop) {
+                top: 86px;
+                left: 714px;
+            }
+        }
+    }
+}

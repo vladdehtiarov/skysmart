@@ -1,0 +1,171 @@
+// Webinar styles
+.webinar {
+    width: 300px;
+    height: 435px;
+    margin-top: 40px;
+    position: relative;
+
+    @include responsive(desktop) {
+        width: 360px;
+        height: 542px;
+        margin-top: 64px;
+    }
+
+    &__sticker {
+        @include coverPicture(153px, 131px);
+        position: absolute;
+        top: -48px;
+        left: 147px;
+        z-index: 100;
+
+        @include responsive(desktop) {
+            @include coverPicture(209px, 179px);
+            top: -60px;
+            left: 190px;        
+        }
+    }
+
+
+    &__img-wrapp {
+        background-color: transparent;
+        transition: all 0.1s ease-in-out;
+
+
+        @include coverPicture(300px, 300px) {
+            border-radius: 16px;
+            position: relative;
+        }
+
+        @include responsive(desktop) {
+            @include coverPicture(360px, 360px);
+        }
+        
+
+    }
+
+    &__back {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+        padding-bottom: 0;
+        font-size: 32px;
+        line-height: 120%;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: transparent;
+        position: absolute;
+        top: 0;
+
+        @include responsive(desktop) {
+            font-size: 40px;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        margin-left: 14px;
+        margin-bottom: 14px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: $base-text;
+
+        @include responsive(desktop) {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        span {
+            display: block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 120%;
+            letter-spacing: -0.1px;
+            background-color: $yellow;
+
+            @include responsive(desktop) {
+                margin-left: 8px;
+                margin-top: 0;
+            }
+
+            &:first-child {
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__info {
+        margin-top: 16px;
+
+        @include responsive(desktop) {
+            margin-top: 20px;
+        }
+    }
+
+    &__date {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: -0.1px;
+        color: $gray;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(desktop) {
+            font-size: 32px;;
+        }
+    }
+
+    &__name {
+        margin-top: 8px;
+
+        @include responsive(desktop) {
+            margin-top: 16px;
+        }
+
+        h3 {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: -0.1px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $base-text;
+            transition: all 0.1s ease-in-out;
+
+            @include responsive(desktop) {
+                font-size: 32px;
+            }
+        }
+        
+    }
+}
+
+.webinar:hover  {
+    .webinar__name h3 {
+        color: $blue;
+        text-decoration-line: underline;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .webinar__img-wrapp {
+        background-color: $pink;
+        transition: all 0.1s ease-in-out;
+        img {
+            opacity: 0;
+        }
+    }
+
+    .webinar__back {
+        color: $white;
+    }
+    
+}
+

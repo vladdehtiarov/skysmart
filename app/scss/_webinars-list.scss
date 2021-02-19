@@ -1,0 +1,16 @@
+// Webinar lost styles
+
+.webinars-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include responsive(desktop) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

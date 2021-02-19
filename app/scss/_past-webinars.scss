@@ -1,0 +1,18 @@
+// Past webinars styles
+.past-webinars {
+    width: 100%;
+    height: auto;
+    margin-top: 64px;
+
+    @include responsive(desktop) {
+        margin-top: 120px;
+    }
+
+    .webinar {
+        height: 403px;
+    
+        @include responsive(desktop) {
+            height: 498px;
+        }
+    }    
+}

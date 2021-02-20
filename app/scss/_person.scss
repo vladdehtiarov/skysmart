@@ -1,0 +1,54 @@
+// Person styles
+.person {
+    width: 100%;
+    max-width: 481px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include responsive(desktop) {
+        align-items: center;
+    }
+
+    &__img {
+        display: inline-table;
+        @include coverImage(76px, 76px) {
+            border-radius: 50%;
+        }
+
+        @include responsive(desktop) {
+            @include coverImage(100px, 100px);
+        }
+    }
+
+    &__info {
+        display: flex;
+        margin-left: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__name {
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(desktop) {
+            font-size: 32px;
+        }
+    }
+
+    &__position {
+        margin-top: 4px;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $gray;
+
+        @include responsive(desktop) {
+            font-size: 24px;
+        }
+    }
+}

@@ -1,5 +1,8 @@
 // Section title styles
 .section-title {
+    @include responsive(mobile) {
+        margin-bottom: -8px;
+    }
 
     h2 {
         font-weight: normal;

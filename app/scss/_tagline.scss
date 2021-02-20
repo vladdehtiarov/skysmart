@@ -1,0 +1,52 @@
+// Tagline styles 
+.tagline {
+    width: 100%;
+    margin-top: 64px;
+    position: relative;
+
+    @include responsive(desktop) {
+        margin-top: 133px;
+    }
+
+    &__sticker {
+        @include coverPicture(310px, 265px);
+        position: absolute;
+        bottom: -142px;
+        left: 5px;
+        @include responsive(desktop) {
+            @include coverPicture(612px, 504px);
+            left: auto;
+            right: 104px;
+            bottom: -96px;
+
+        }
+    }
+
+    &__content {
+        width: 100%;
+        height: auto;
+        padding: 16px 16px 125px 16px;
+        border-radius: 16px;
+        background-color: $orange;
+
+        @include responsive(desktop) {
+            padding: 32px 40px 58px 40px;
+        }
+    }
+
+    &__text {
+        width: 95%;
+        max-width: 928px;
+        margin-top: 12px;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(desktop) {
+            line-height: 120%;
+            margin-top: 24px;
+            font-size: 32px;
+        }
+    }
+}

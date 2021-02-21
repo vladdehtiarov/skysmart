@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script defer src="js/main.min.js"></script>
 </head>
-<body>
+<body class="all-past-webinars">
     
     <!-- Header -->
     <header class="header">
@@ -26,13 +26,427 @@
         <!-- Page title -->
         <section class="page-title">
             <div class="container">
-                <h1>Ближайшие вебинары для школьников и родителей</h1>
-                <span class="emoji emoji-teacher-man"></span>
-                <span class="emoji emoji-video"></span>
-                <span class="emoji emoji-teen-girl"></span>
+                <h1>Записи прошлых вебинаров
+                    <span class="emoji emoji-headphones"></span>
+                </h1>
             </div>
         </section>
         <!-- Page title END -->
+
+        <!-- Sorting webinars -->
+        <section class="sorting-section">
+            <div class="container">
+                <div class="sorting-section__inner">
+                    <form>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-travels" data-sort>
+                            <span class="sorting-section__custom-inp">Английский язык</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-job" data-sort>
+                            <span class="sorting-section__custom-inp">Русский язык</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-office" data-sort>
+                            <span class="sorting-section__custom-inp">Физика</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-hobby" data-sort>
+                            <span class="sorting-section__custom-inp">Математика</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-education" data-sort>
+                            <span class="sorting-section__custom-inp">Шахматы</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-business" data-sort>
+                            <span class="sorting-section__custom-inp">Открытый урок</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-dialogues" data-sort>
+                            <span class="sorting-section__custom-inp">Мастер-класс</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-tourism" data-sort>
+                            <span class="sorting-section__custom-inp">Вебинар</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-cafe" data-sort>
+                            <span class="sorting-section__custom-inp">Интервью</span>
+                        </label>
+                        <label class="sorting-section__item">
+                            <input type="checkbox" name="sort-cafe" data-sort>
+                            <span class="sorting-section__custom-inp">Онлайн-квест</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Sorting webinars END -->
+
+        <!-- Past webinars -->
+        <section class="past-webinars"> 
+            <div class="container">
+                <!-- Past webinars -->
+                <div class="webinars-list">
+                    <!-- Webinar -->
+                    <div class="webinar">
+                        <a href="#"> 
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-5.webp 1x, ../images/past-wb/wb-img-5@2x.webp 2x,
+                                            ../images/past-wb/wb-img-5@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-5.png"
+                                         srcset="../images/past-wb/wb-img-5@2x.png 2x, ../images/past-wb/wb-img-5@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Английский язык</span>
+                                    <span>Открытый урок</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <!-- Webinar END -->
+
+                    <!-- Webinar -->
+                    <div class="webinar">
+                        <a href="#">
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-1.webp 1x, ../images/past-wb/wb-img-1@2x.webp 2x,
+                                            ../images/past-wb/wb-img-1@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-1.png"
+                                         srcset="../images/past-wb/wb-img-1@2x.png 2x, ../images/past-wb/wb-img-1@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Русский язык</span>
+                                    <span>Мастер-класс</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Webinar END -->
+
+                    <!-- Webinar -->
+                    <div class="webinar">
+                        <a href="#">
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-2.webp 1x, ../images/past-wb/wb-img-2@2x.webp 2x,
+                                            ../images/past-wb/wb-img-2@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-2.png"
+                                         srcset="../images/past-wb/wb-img-2@2x.png 2x, ../images/past-wb/wb-img-2@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Физика</span>
+                                    <span>Вебинар</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Webinar END -->
+
+                    <!-- Webinar -->
+                     <div class="webinar">
+                        <a href="#">
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-3.webp 1x, ../images/past-wb/wb-img-3@2x.webp 2x,
+                                            ../images/past-wb/wb-img-3@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-3.png"
+                                         srcset="../images/past-wb/wb-img-3@2x.png 2x, ../images/past-wb/wb-img-3@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Математика</span>
+                                    <span>Интервью</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Webinar END -->
+
+                     <!-- Webinar -->
+                     <div class="webinar">
+                        <a href="#">
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-4.webp 1x, ../images/past-wb/wb-img-4@2x.webp 2x,
+                                            ../images/past-wb/wb-img-4@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-4.png"
+                                         srcset="../images/past-wb/wb-img-4@2x.png 2x, ../images/past-wb/wb-img-4@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Шахматы</span>
+                                    <span>Онлайн-квест</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Webinar END -->
+
+                    <!-- Webinar -->
+                    <div class="webinar">
+                        <a href="#">
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-4.webp 1x, ../images/past-wb/wb-img-4@2x.webp 2x,
+                                            ../images/past-wb/wb-img-4@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-4.png"
+                                         srcset="../images/past-wb/wb-img-4@2x.png 2x, ../images/past-wb/wb-img-4@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Шахматы</span>
+                                    <span>Онлайн-квест</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Webinar END -->
+
+                    <!-- Webinar -->
+                    <div class="webinar">
+                        <a href="#">
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-1.webp 1x, ../images/past-wb/wb-img-1@2x.webp 2x,
+                                            ../images/past-wb/wb-img-1@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-1.png"
+                                         srcset="../images/past-wb/wb-img-1@2x.png 2x, ../images/past-wb/wb-img-1@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Русский язык</span>
+                                    <span>Мастер-класс</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Webinar END -->
+
+                    <!-- Webinar -->
+                    <div class="webinar">
+                        <a href="#"> 
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-5.webp 1x, ../images/past-wb/wb-img-5@2x.webp 2x,
+                                            ../images/past-wb/wb-img-5@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-5.png"
+                                         srcset="../images/past-wb/wb-img-5@2x.png 2x, ../images/past-wb/wb-img-5@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Английский язык</span>
+                                    <span>Открытый урок</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <!-- Webinar END -->
+
+                    <!-- Webinar -->
+                    <div class="webinar">
+                        <a href="#">
+                            <div class="webinar__img-wrapp">
+                                <picture>
+                                    <source type="image/webp" 
+                                            srcset="../images/past-wb/wb-img-2.webp 1x, ../images/past-wb/wb-img-2@2x.webp 2x,
+                                            ../images/past-wb/wb-img-2@3x.webp 3x">
+                                    <img src="../images/past-wb/wb-img-2.png"
+                                         srcset="../images/past-wb/wb-img-2@2x.png 2x, ../images/past-wb/wb-img-2@3x.png 3x"
+                                         alt="webinar">
+                                </picture>
+                                <div class="webinar__back">
+                                    Немного о том, что будет на вебинаре или мастер-классе
+                                </div>
+                                <div class="webinar__icons">
+                                    <span>Физика</span>
+                                    <span>Вебинар</span>
+                                </div>
+                            </div>
+    
+                            <div class="webinar__info">
+                                <div class="webinar__name">
+                                    <h3>
+                                        Название вебинара или мастер-класса максимум в три строки
+                                    </h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Webinar END -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Past webinars END -->
+
+        <!-- Page form -->
+        <section class="page-form">
+            <div class="container">
+                <div class="page-form__inner">
+                    <div class="page-form__label">
+                        <div class="section-title">
+                            <h2>Узнавайте о событиях первыми</h2>
+                            <span class="emoji emoji-clocks"></span>
+                            <span class="emoji emoji-inlove emoji--only-desktop"></span>
+                            <span class="emoji emoji-laptop emoji--only-desktop"></span>
+                        </div>
+                        
+                        <div class="page-form__text">
+                            После записи на ваш e-mail будут приходить письма с приглашениями на вебинары,
+                            мастер-классы<br> и онлайн-квесты
+                        </div>
+                    </div>
+                    <div class="page-form__form-block">
+                        <form class="form">
+                            <div class="form__input-wrapper">
+                                <input type="text" class="form-name form-input" name="name" required placeholder="Имя">
+                                <input type="text" class="form-emal form-input" name="emai" required placeholder="E-mail">
+                                <label class="switch">
+                                    <input type="checkbox" name="student">
+                                    <span class="slider round"></span>
+                                    <span class="switch__text">Уже ученик Skysmart</span>
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox" name="18-years">
+                                    <span class="slider round"></span>
+                                    <span class="switch__text">Старше 18 лет</span>
+                                </label>
+                                <button href="#" type="submit" class="form-btn">Подписаться на афишу</button>
+                            </div>
+                        </form>
+                        <div class="form-error"></div> 
+                        <div class="form-license">
+                            <div class="form-license__text">
+                                Нажимая, вы принимаете<br>условия
+                                <a href="#" class="form-license__link"><span>Соглашения</span> →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Page form END -->
+
+        <!-- Tell about -->
+        <section class="tell-about">
+            <div class="container">
+                <div class="tell-about__text">
+                    Расскажи о нас другу через
+                    <a class="tell-about__link tg-link" href="#">телеграм</a> → или
+                    <a class="tell-about__link whatshApp-link" href="#"> WhatsApp</a> →
+                </div>
+            </div>
+        </section>
+        <!-- Tell about  END-->
+
     </main>
     <!-- Main END -->
 

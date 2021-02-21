@@ -35,6 +35,11 @@
     &.emoji-spoke {
         @include uploadRespEmoji(spoke);
     }
+
+    //headphones
+    &.emoji-headphones {
+        @include uploadRespEmoji(headphones);
+    }
     
 }
 

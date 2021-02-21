@@ -1,0 +1,127 @@
+// Sorting section
+
+.sorting-section {
+    margin: 18px 0 -3px 0;
+    width: 100%;
+    @include responsive(desktop) {
+        margin: 72px 0;
+        margin-bottom: -5px;
+    }
+
+    &__inner {
+        width: 100%;
+
+        form {
+            width: 100%;
+            @include responsive(mobile) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 4px 4px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        @include responsive(desktop) {
+            margin: 10px 6px;
+        }
+    }
+
+    &__item:first-child {
+        margin-left: 0;
+        @include responsive(mobile) {
+            order: 1;
+        }
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+        @include responsive(mobile) {
+            order: 10;
+        }
+    }
+
+    &__item:nth-child(2){
+        @include responsive(mobile) {
+            order: 3;
+        }
+    }
+    &__item:nth-child(3){
+        @include responsive(mobile) {
+            order: 2;
+        }
+    }
+    &__item:nth-child(4){
+        @include responsive(mobile) {
+            order: 4;
+        }
+    }
+    &__item:nth-child(5){
+        @include responsive(mobile) {
+            order: 5;
+        }
+    }
+    &__item:nth-child(7){
+        @include responsive(mobile) {
+            order: 7;
+        }
+    }
+    &__item:nth-child(8){
+        @include responsive(mobile) {
+            order: 8;
+        }
+    }
+    &__item:nth-child(9){
+        @include responsive(mobile) {
+            order: 9;
+        }
+    }
+
+    &__item:nth-child(6) {
+        @include responsive(mobile) {
+            order: 6;
+        }
+
+        @include responsive(desktop) {
+            margin-left: 0;
+        }
+    }
+
+    // Custom input styles
+    &__custom-inp {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: $white;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: rgba(4, 18, 27, 0.24);
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+
+        @include responsive(desktop) {
+            padding: 17px 28px;
+            font-size: 24px;
+        }
+    }
+
+    &__custom-inp:hover {
+        background-color: #C2F5FF;
+    }
+
+    &__item {
+        // hide default input styles
+        input[type="checkbox"] {
+            display: none;
+            outline: none;
+        }
+        
+        input[type="checkbox"]:checked + .sorting-section__custom-inp {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+}

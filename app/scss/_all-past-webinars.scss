@@ -1,0 +1,48 @@
+// All past webinars
+.all-past-webinars {
+    // Page title styles
+    .page-title {
+
+        h1 {
+            @include responsive(desktop) {
+                max-width: 100%;
+                position: relative;
+            }
+        }
+
+        .emoji {
+            
+            &-headphones {
+                top: -30px;
+                left: auto;
+                right: 21px;
+                transform: rotate(-8.42deg);
+                
+                @include responsive(desktop) {
+                    top: -44px;
+                    left: auto;
+                    right: 20px;
+                }
+            }
+
+        }
+    }
+
+    .past-webinars {
+        margin-top: 0;
+    }
+
+    .webinar {
+        @include responsive(desktop) {
+            margin-top: 62px;
+        }
+    }
+
+    .page-form {
+        margin-top: 88px;
+        @include responsive(desktop) {
+            margin-top: 123px;
+        }
+    }
+
+}

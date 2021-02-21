@@ -1,0 +1,103 @@
+// Page form styles
+@import "switch";
+@import "form";
+
+.page-form {
+    width: 100%;
+    height: auto;
+    margin-top: 46px;
+
+    @include responsive(desktop) {
+        margin-top: 104px;
+    }
+
+    .emoji {
+        position: absolute;
+
+        &-clocks {
+            transform: rotate(-8.66deg);
+            z-index: 80;
+
+            @include responsive(desktop) {
+                top: -96px;
+                left: 310px;
+            }
+
+            @include responsive(mobile) {
+                width: 128px;
+                top: -86px;
+                left: 138px;
+            }
+        }
+
+        &-inlove {
+            top: -8px;
+            left: 482px;;
+            z-index: 100;
+        }
+
+        &-laptop {
+            top: 34px;
+            left: 362px;
+            transform: rotate(9.71deg);
+            z-index: 90;
+        }
+    }
+
+    &__inner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px;
+        padding-bottom: 32px;
+        background-color: $orange;
+        border-radius: 16px;
+
+        @include responsive(desktop) {
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 32px 40px 50px 40px;
+        }
+
+        @include resp(1150px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__label {
+        width: 100%;
+    }
+
+    &__form-block {
+        width: 100%;
+        max-width: 351px;
+    }
+
+    .section-title {
+        width: 274px;
+        position: relative;
+
+        @include responsive(desktop) {
+            width: 554px;
+        }
+    }
+
+    &__text {
+        width: 240px;
+        margin-top: 17px;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(desktop) {
+            width: 634px;
+            margin-top: 24px;
+            font-size: 32px;
+        }
+    }
+}

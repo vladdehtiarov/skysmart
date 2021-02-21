@@ -12,13 +12,16 @@
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="header__logo">
-                <img src="../images/logo.svg" alt="skysmart">
-            </div>
+            <a href="#" class="logo-link">
+                <div class="header__logo">
+                    <img src="../images/logo.png" alt="skysmart">
+                </div>
+            </a>
         </div>
     </header>
     <!-- Header END -->
 
+    <!-- Main -->
     <main class="main">
         <!-- Page title -->
         <section class="page-title">
@@ -459,6 +462,7 @@
         </section>
         <!-- Past webinars END -->
 
+        <!-- Tagline -->
         <section class="tagline">
             <div class="container">
                 <div class="tagline__content">
@@ -491,8 +495,195 @@
                 </div>
             </div>
         </section>
+        <!-- Tagline END -->
+
+        <!-- Coments -->
+        <section class="coments">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Отзывы о вебинарах Skysmart</h2>
+                </div>
+                <div class="coments__sticker">
+                    <picture>
+                        <img src="../images/stickers/learn-new.png"
+                             srcset="../images/stickers/learn-new@2x.png 2x, ../images/stickers/learn-new@3x.png 3x"
+                             alt="webinar">
+                    </picture>
+                </div>
+                <div class="coments__wrapper">
+                    
+                    <!-- Coment 1 -->
+                    <div class="coment">
+                        
+                        <div class="person">
+                            <div class="person__img">
+                                <img src="../images/coments/avatar-1.png" alt="avatar">
+                            </div>
+                            <div class="person__info">
+                                <span class="person__name">Анна Симонова</span>
+                                <span class="person__position">Россия, Саратов</span>
+                            </div>
+                        </div>
+                        <div class="coment__text">
+                            Спасибо за эфир. Очень любим ваших спикеров, столько полезной информации,
+                            мозг перевора- чивается :) Я на многое поменяла взгляд, было тяжело,
+                            но видя результат хочется сказать огромное спасибо!
+                        </div>
+                    </div>
+
+                    <!-- Coment 2 -->
+                    <div class="coment">
+                        <div class="person">
+                            <div class="person__img">
+                                <img src="../images/coments/avatar-2.png" alt="avatar">
+                            </div>
+                            <div class="person__info">
+                                <span class="person__name">Татьяна Иванчук</span>
+                                <span class="person__position">Россия, Москва</span>
+                            </div>
+                        </div>
+                        <div class="coment__text">
+                            Мы с дочкой ходим практически на все онлайн-квесты Skysmart. Это отличный
+                            способ повеселиться и провести время с пользой.
+                        </div>
+                    </div>
+
+                    <!-- Coment 3 -->
+                    <div class="coment">
+                        <div class="person">
+                            <div class="person__img">
+                                <img src="../images/coments/avatar-3.png" alt="avatar">
+                            </div>
+                            <div class="person__info">
+                                <span class="person__name">Ольга Савельева</span>
+                                <span class="person__position">Россия, Мурманск</span>
+                            </div>
+                        </div>
+                        <div class="coment__text">
+                            Спасибо за информацию, очень интересно и вдохновляюще!
+                        </div>
+                    </div>
+
+                    <!-- Coment 4 -->
+                    <div class="coment">
+                        <div class="person">
+                            <div class="person__img">
+                                <img src="../images/coments/avatar-4.png" alt="avatar">
+                            </div>
+                            <div class="person__info">
+                                <span class="person__name">Светлана Кузнецова</span>
+                                <span class="person__position">Россия, Омск</span>
+                            </div>
+                        </div>
+                        <div class="coment__text">
+                            Спасибо вам огромное за вебинар! Вы просто ПРЕКРАСНО объясняете,
+                            отвечаете на ВСЕ вопросы, обязательно запишусь на следующий вебинар.
+                        </div>
+                    </div>
+
+                    <!-- Coment 5 -->
+                    <div class="coment">
+                        <div class="person">
+                            <div class="person__img">
+                                <img src="../images/coments/avatar-5.png" alt="avatar">
+                            </div>
+                            <div class="person__info">
+                                <span class="person__name">Арина Амарантова</span>
+                                <span class="person__position">Россия, Саратов</span>
+                            </div>
+                        </div>
+                        <div class="coment__text">
+                            Открытый урок по логическим задачам очень помог мне разобраться в теме,
+                            наконец-то все стало понятно. Теперь хочу заниматься математикой!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Coments END -->
+
+        <!-- Page form -->
+        <section class="page-form">
+            <div class="container">
+                <div class="page-form__inner">
+                    <div class="page-form__label">
+                        <div class="section-title">
+                            <h2>Узнавайте о событиях первыми</h2>
+                            <span class="emoji emoji-clocks"></span>
+                            <span class="emoji emoji-inlove emoji--only-desktop"></span>
+                            <span class="emoji emoji-laptop emoji--only-desktop"></span>
+                        </div>
+                        
+                        <div class="page-form__text">
+                            После записи на ваш e-mail будут приходить письма с приглашениями на вебинары,
+                            мастер-классы<br> и онлайн-квесты
+                        </div>
+                    </div>
+                    <div class="page-form__form-block">
+                        <form class="form">
+                            <div class="form__input-wrapper">
+                                <input type="text" class="form-name form-input" name="name" required placeholder="Имя">
+                                <input type="text" class="form-emal form-input" name="emai" required placeholder="E-mail">
+                                <label class="switch">
+                                    <input type="checkbox" name="student">
+                                    <span class="slider round"></span>
+                                    <span class="switch__text">Уже ученик Skysmart</span>
+                                </label>
+                                <label class="switch">
+                                    <input type="checkbox" name="18-years">
+                                    <span class="slider round"></span>
+                                    <span class="switch__text">Старше 18 лет</span>
+                                </label>
+                                <button href="#" type="submit" class="form-btn">Подписаться на афишу</button>
+                            </div>
+                        </form>
+                        <div class="form-error"></div> 
+                        <div class="form-license">
+                            <div class="form-license__text">
+                                Нажимая, вы принимаете<br>условия
+                                <a href="#" class="form-license__link"><span>Соглашения</span> →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Page form END -->
+
+        <!-- Tell about -->
+        <section class="tell-about">
+            <div class="container">
+                <div class="tell-about__text">
+                    Расскажи о нас другу через
+                    <a class="tell-about__link tg-link" href="#">телеграм</a> → или
+                    <a class="tell-about__link whatshApp-link" href="#"> WhatsApp</a> →
+                </div>
+            </div>
+        </section>
+        <!-- Tell about  END-->
 
     </main>
+    <!-- Main END -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="logo-link">
+                    <div class="footer__logo">
+                        <img src="../images/logo.png" alt="skysmart">
+                    </div>
+                </a>
+
+                <div class="footer__trademark">
+                    <span>&#xa9; Skysmart, 2021</span>
+                    <span class="emoji emoji-spoke"></span>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
 
 </body>
 </html>

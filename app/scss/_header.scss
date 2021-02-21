@@ -10,7 +10,7 @@
 
     &__logo {
         display: inline-block;
-        @include coverImage(131px, 15px);
+        @include coverImage(131px, 16px);
 
         @include responsive(desktop) {
             @include coverImage(238px, 28px);

@@ -1,0 +1,44 @@
+// Tell about styles
+.tell-about {
+    width: 100%;
+    height: auto;
+    margin-top: 32px;
+    margin-bottom: 22px;
+
+    @include responsive(desktop) {
+        margin-top: 80px;
+        margin-bottom: 61px;
+    }
+
+    &__text,
+    &__link {
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $base-text;
+
+        @include responsive(desktop) {
+            font-size: 40px;
+            line-height: 120%;
+        }
+    }
+
+    &__link {
+        border-bottom: 2px solid $base-text;
+        // text-decoration: underline;
+
+        @include responsive(desktop) {
+            border-bottom: 4px solid $base-text;
+        }
+    }
+
+    &__link:hover {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+
+        @include responsive(desktop) {
+            border-bottom: 4px solid $blue;
+        }
+    }
+}

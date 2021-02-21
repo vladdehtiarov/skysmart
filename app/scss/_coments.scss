@@ -1,0 +1,120 @@
+// Coments styles
+.coments {
+    margin-top: 158px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 162px;
+
+
+    @include responsive(desktop) {
+        margin-top: 104px;
+        padding-bottom: 0;
+    }
+
+    &__sticker {
+        @include coverPicture(374px, 240px);
+        position: absolute;
+        left: 53%;
+        bottom: 0;
+        transform: translateX(-50%);
+
+        @include responsive(desktop) {
+            left: 141px;
+            bottom: 36px;
+            transform: translateX(0);
+
+        }
+    }
+
+    &__wrapper {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+
+        @include responsive(desktop) {
+            margin-top: 24px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .coment {
+        width: 300px;
+        margin-top: 16px;
+        padding: 24px;
+        padding-bottom: 38px;
+        border-radius: 16px;
+        background-color: $white;
+
+        @include responsive(desktop) {
+            width: 360px;
+            margin-top: 24px;
+        }
+
+        &__text {
+            margin-top: 12px;
+            font-size: 18px;
+            line-height: 24px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+        }
+
+        
+    }
+
+    .coment:nth-child(4) {
+
+        @include responsive(desktop) {
+            margin-left: 400px;
+            margin-top: -49px;
+        }
+        
+    }
+
+    .coment:last-child {
+        @include responsive(desktop) {
+            margin-top: -97px;
+        }
+    }
+
+    // Person styles
+    .person {
+        justify-content: flex-start;
+
+        &__img {
+            display: inline-table;
+            @include coverImage(48px, 48px) {
+            }
+
+            @include responsive(desktop) {
+                @include coverImage(48px, 48px);
+            }
+        }
+
+        &__info {
+            margin-left: 16px;
+        }
+
+        &__name {
+            font-size: 18px;
+            line-height: 23px;
+
+            @include responsive(desktop) {
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+
+        &__position {
+            font-size: 14px;
+            line-height: 18px;
+
+            @include responsive(desktop) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}

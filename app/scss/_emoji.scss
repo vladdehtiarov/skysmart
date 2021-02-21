@@ -15,6 +15,26 @@
     &.emoji-teen-girl {
         @include uploadRespEmoji(teen-girl);
     }
+
+    //clocks
+    &.emoji-clocks {
+        @include uploadRespEmoji(clocks);
+    }
+
+    //inlove
+    &.emoji-inlove {
+        @include uploadRespEmoji(inlove);
+    }
+
+    //laptop
+    &.emoji-laptop {
+        @include uploadRespEmoji(laptop);
+    }
+
+    //spoke
+    &.emoji-spoke {
+        @include uploadRespEmoji(spoke);
+    }
     
 }
 

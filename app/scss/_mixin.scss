@@ -26,6 +26,11 @@
   }
 }
 
+@mixin resp($range) {
+  @media (max-width: $range) {
+    @content;
+  }
+}
 
 @mixin coverBgImg($imgSrs) {
   background-image: url($imgSrs);

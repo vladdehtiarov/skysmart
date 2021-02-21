@@ -1,0 +1,53 @@
+// Footer styles
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 23px 0;
+    padding-bottom: 14px;
+
+    @include responsive(desktop) {
+        padding: 45px 0;
+        
+    }
+
+    &__inner {
+        width: 100%;
+
+        @include responsive(desktop) {  
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+
+    &__logo {
+        @include coverImage(131px, 16px);
+
+        @include responsive(desktop) {
+            @include coverImage(238px, 28px);
+        }
+    }
+
+    &__trademark {
+        display: flex;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.1px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+
+        @include responsive(desktop) {
+            font-size: 24px;
+        }
+
+        @include responsive(mobile) {
+            margin-top: 18px;
+        }
+
+        .emoji {
+            width: 29px;
+            height: 29px;
+            margin-left: 7px;
+        }
+    }
+}

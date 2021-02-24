@@ -4,9 +4,17 @@
     .page-title {
 
         h1 {
+            // max-width: 304px;
+
+            
+
             @include responsive(desktop) {
                 max-width: 100%;
                 position: relative;
+            }
+
+            @include resp(1205px) {
+                max-width: 68%;
             }
         }
 
@@ -22,6 +30,21 @@
                     top: -44px;
                     left: auto;
                     right: 20px;
+                }
+
+                @include resp(1205px) {
+                    left: 600px;
+                    right: auto;
+                }
+
+                @include resp(891px) {
+                    left: 400px;
+                    right: auto;
+                }
+
+                @include resp(600px) {
+                    left: auto;
+                    right: 21px;
                 }
             }
 

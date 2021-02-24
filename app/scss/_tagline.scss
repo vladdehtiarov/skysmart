@@ -2,7 +2,9 @@
 .tagline {
     width: 100%;
     margin-top: 64px;
-    position: relative;
+    .container {
+        position: relative;
+    }
 
     @include responsive(desktop) {
         margin-top: 133px;
@@ -16,7 +18,7 @@
         @include responsive(desktop) {
             @include coverPicture(612px, 504px);
             left: auto;
-            right: 104px;
+            right: -9px;
             bottom: -96px;
 
         }

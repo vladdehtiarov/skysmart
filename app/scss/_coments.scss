@@ -1,9 +1,12 @@
 // Coments styles
 .coments {
     margin-top: 158px;
-    position: relative;
     overflow: hidden;
     padding-bottom: 162px;
+
+    .container {
+        position: relative;
+    }
 
 
     @include responsive(desktop) {
@@ -15,11 +18,11 @@
         @include coverPicture(374px, 240px);
         position: absolute;
         left: 53%;
-        bottom: 0;
+        bottom: -162px;
         transform: translateX(-50%);
 
         @include responsive(desktop) {
-            left: 141px;
+            left: 27px;
             bottom: 36px;
             transform: translateX(0);
 
